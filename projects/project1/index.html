@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./assets/img/preload/localiza-favicon.png" type="image/x-icon">
+    <title>Programa de Integridade</title>
+    <script type="text/javascript" src="./js/libs/phaser.min.js"></script>
+    <script type="text/javascript" src="./js/components.js"></script>
+    <script type="text/javascript" src="./js/piv/PreloadScene.js"></script>
+    <script type="text/javascript" src="./js/piv/Piv.js"></script>
+    <script type="text/javascript" src="./js/screens/screens.js"></script>
+    <script type="text/javascript" src="./js/scormControl.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: #cccccd;
+        }
+
+        @font-face {
+            font-family: Museo;
+            src: url('./assets/fonts/Museo500-Regular.otf');
+        }
+
+        #orientationElement {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('./assets/img/preload/AVISO_HORIZONTAL.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-color: black;
+            z-index: 999;
+        }
+
+        @media (orientation: landscape) {
+            #orientationElement {
+                display: none;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div style="font-family:Museo; position:absolute; left:-1000px; visibility: hidden;">.</div>
+    <div id="orientationElement"></div>
+</body>
+
+</html>

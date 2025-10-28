@@ -1,0 +1,7 @@
+**/video
+**/node_modules
+**/Build
+**/audio
+*.mp4
+*.DS_Store
+Thumbs.db
